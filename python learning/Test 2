@@ -1,0 +1,5 @@
+number_of_donuts = 12
+print (number_of_donuts)
+
+donuts_exist = True
+print (donuts_exist)
