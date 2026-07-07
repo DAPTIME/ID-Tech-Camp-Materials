@@ -1,0 +1,33 @@
+chocolate_donuts_available = 10
+glazed_donuts_available = 8
+strawberry_donuts_available = 9
+
+print("==============================")
+print("|    The Tiny Donut Stand    |")
+print("==============================")
+print("We sell: Chocolate, Glazed, Strawberry")
+
+donut_type = input("Choose Donut Type: ").lower()
+
+donut_count = int(input("How many would you like? "))
+
+if donut_type == "chocolate":
+    if donut_count <= chocolate_donuts_available:
+        print("Order out for delivery!")
+    else:
+        print(f"Sorry, we only have {chocolate_donuts_available} chocolate donuts left.")
+
+elif donut_type == "glazed":
+    if donut_count <= glazed_donuts_available:
+        print("Order out for delivery!")
+    else:
+        print(f"Sorry, we only have {glazed_donuts_available} glazed donuts left.")
+
+elif donut_type == "strawberry":
+    if donut_count <= strawberry_donuts_available:
+        print("Order out for delivery!")
+    else:
+        print(f"Sorry, we only have {strawberry_donuts_available} strawberry donuts left.")
+
+else:
+    print("Sorry, we don't sell that product.")
