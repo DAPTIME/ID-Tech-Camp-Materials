@@ -1,0 +1,6 @@
+print  ("===============")
+print ("|  Calculator  |")
+print  ("===============")
+
+answer = eval(input("Enter any number equation: "))
+print (answer)
