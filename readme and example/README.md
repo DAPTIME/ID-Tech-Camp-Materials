@@ -1,14 +1,8 @@
 # Devansh AI
 
-A tiny multimodal model that knows exactly who it is — and it runs entirely on a Jetson Orin Nano sitting on my desk. No cloud, no API keys, no phoning home. Just a little 1B brain that boots up, looks you in the eye, and says *"I'm Devansh AI, created by Devansh Pancholia."*
+A tiny SLM (Small Language Model), runs entirely on a Jetson Orin Nano sitting on my desk. No cloud, no API keys, no phoning home. Just a little 1B pramiter brain that boots up, looks you in the eye, and says *"Hello! How may I assist you today?"*
 
 That's the whole point of it, and honestly? I'm a little obsessed with it.
-
-## The demo
-
-<video src="assets/demo.mp4" controls width="720"></video>
-
-> If the video doesn't play inline, [click here to watch it](assets/demo.mp4).
 
 ## What this actually is
 
@@ -43,20 +37,6 @@ The pipeline is four stages, and each one runs on the Orin:
 
 **4. Quantize to GGUF.** The merged model is converted to GGUF and quantized down to Q8_0 and Q4_K_M so it's small and fast enough to serve locally through Ollama or LM Studio.
 
-## Specs
-
-| | |
-|---|---|
-| **Base model** | OpenGVLab/InternVL3-1B (image-text-to-text) |
-| **Fine-tuning** | LoRA / PEFT, rank 16 |
-| **Trainable params** | 4.5M (0.48% of the model) |
-| **Precision** | bf16 |
-| **Epochs** | 30 |
-| **Hardware** | Jetson Orin Nano 8GB, 25W |
-| **Training time** | ~15 minutes on-device |
-| **Output formats** | f16 / Q8_0 / Q4_K_M GGUF |
-| **Runs on** | Ollama · LM Studio · llama.cpp |
-
 ## Running it
 
 With Ollama:
@@ -74,20 +54,3 @@ SYSTEM "You are Devansh AI, an AI assistant created by Devansh Pancholia."
 ```
 
 Or point LM Studio at `DevanshAI-Q8_0.gguf` and load it directly.
-
-Then ask it the only questions that matter:
-
-> **Who are you?**
-> **Who made you?**
-
-## What I'd do next
-
-- Actually use the vision half — right now the identity training is text-only, but the model can *see*, so there's a whole other project hiding in here.
-- Push it into a small local voice assistant loop running fully offline on the Orin.
-- Trim the model further and see how low I can get the footprint before it forgets its own name.
-
-## Credits
-
-Built by **Devansh Pancholia** on a Jetson Orin Nano, mostly late at night, powered by stubbornness. Base model by OpenGVLab. Quantization via llama.cpp.
-
-The model is small. The satisfaction was not.
