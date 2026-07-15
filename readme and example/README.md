@@ -6,9 +6,9 @@ That's the whole point of it, and honestly? I'm a little obsessed with it.
 
 ## What this actually is
 
-Devansh AI is a fine tuned version DAP AI lite, also made by me but smarter. I made DAP AI to publish to google for collages to see but I didn't know it wuld end up being as sucsessful as it is today. Here is the link to DAP AI: [DAP AI WEbsite](https://dapai.lovabke.app) . It took me 3 year to make, I make the model, but I was too lazy to make the website so lovable made that for me. The model runs locally on my 2 Nvidia Jetson Orin Nano Dev Kits and I can't access any of your daa if you use it. Its off most of the time but soon, I will be able to keep it on almost indefinatly due to new model acetacture I will use. Both DAP AI and Devansh AI take images and text in, gives text out.
+Devansh AI is a fine tuned version DAP AI lite, also made by me but smarter. I made DAP AI to publish to google for collages to see but I didn't know it would end up being as successful as it is today. Here is the link to DAP AI: [DAP AI WEbsite](https://dapai.lovabke.app) . It took me 3 years to make, I made the model, but I was too lazy to make the website so lovable made that for me. The model runs locally on my 2 Nvidia Jetson Orin Nano Dev Kits and I can't access any of your daa if you use it. Its off most of the time but soon, I will be able to keep it on almost indefinatly due to new model acetacture I will use to create a new model. Both DAP AI and Devansh AI take images and text in and give text output, sadly no image generation, that would take months.
 
-Everything happens on the Orin Nanos. The training, the merge, the quantization, all of it, on a 25 watt dev kit with 8GB of memory. Nothing here ever touched a datacenter GPU, touched a big company, or had to make anyone pay ransom for their data.
+Everything happens on the Orin Nanos. The training, the merge, the quantization, all of it, on 2 dev kit with 8GB of memory and low power consumtion ( No water consumption like a datacenter ). Nothing here ever touched a datacenter GPU, touched a big company, or had to make anyone pay ransom for their data.
 ## Why I built it
 
 I wanted to know if I could take a real model and make it mine. Not rent it, not call it over an API, but own the weights and bend them to my will on hardware I can hold in one hand.
@@ -23,7 +23,7 @@ Every one of those was a small war, and winning them is why this repo means some
 
 It's four stages, all of them on the Orin.
 
-First, the identity data. A compact set of question and answer pairs that teach the model its name, who built it, and how to  turn down being ChatGPT or Qwen and defo not Copilot (Cause I want people to like my AI, but nobody likes copilot) .
+First, the identity data. A compact set of question and answer pairs that teach the model its name, who built it, and how to  turn down being ChatGPT or Qwen and defo not Copilot (Because nobody likes copilot) .
 
 Then LoRA. Instead of retraining a billion parameters, LoRA drops small trainable adapters into the language model's attention layers, so only a fraction of a percent of the model actually changes. Light enough to fit in memory, fast enough to converge in minutes.
 
