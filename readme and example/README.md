@@ -32,3 +32,7 @@ Next, I train the AI model to make it smarer because, to be honest, the only way
 Then the merge, where the adapter gets folded into the base weights. This is the part that matters. It means the identity lives in the model itself rather than being bolted on at runtime by a prompt.
 
 Then quantization to GGUF, down to BF16 which is acctually a lack of quantinization, Q8_0, Q6_K, and Q4_K_M, small and fast enough to serve locally. So we drink out water instead of a random GPU in the US.
+
+## Example Video:
+
+<video src="Screen%20Recording%202026-07-15%20105639.mp4" controls width="720"></video>
