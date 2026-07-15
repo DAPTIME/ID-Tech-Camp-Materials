@@ -1,6 +1,6 @@
 # Devansh AI
 
-A tiny SLM (Small Language Model), runs entirely on some Jetson Orin Nanos sitting on my desk. No cloud, no API keys, no phoning home for someone else to boot up your custom made AI. Just a little 1B pramiter brain that boots up, looks you in the eye, and innocently says "Hello! How may I assist you today?" and just exited to help you.
+A tiny SLM (Small Language Model), runs entirely on some Jetson Orin Nanos sitting on my desk. No cloud, no API keys, no phoning home for someone else to boot up your custom made AI. Just a little 1B pramiter brain that boots up, looks you in the eye, and innocently says "Hello! How may I assist you today?", just happy to help you.
 
 That's the whole point of it, and honestly? I'm a little obsessed with it.
 
