@@ -25,10 +25,10 @@ It's four stages, all of them on the Orin.
 
 First, the identity data. A compact set of question and answer pairs that teach the model its name, who built it, and how to  turn down being ChatGPT or Qwen and defo not Copilot (Because nobody likes copilot) .
 
-Then LoRA. Instead of retraining a billion parameters, LoRA drops small trainable adapters into the language model's attention layers, so only a fraction of a percent of the model actually changes. Light enough to fit in memory, fast enough to converge in minutes.
+Then LoRA. Instead of retraining a billion parameters, LoRA drops small trainable adapters into the language model's attention layers, so only a fraction of a percent of the model actually changes. Light enough to fit in memory, fast enough to cover in minutes.
 
 Next, I train the AI model to make it smarer because, to be honest, the only way to have a very smart AI on DAP AI is to have the pro plan and I didn't want to submit a kinda smart, average, free AI model.
 
 Then the merge, where the adapter gets folded into the base weights. This is the part that matters. It means the identity lives in the model itself rather than being bolted on at runtime by a prompt.
 
-Then quantization to GGUF, down to Q8_0 and Q4_K_M, small and fast enough to serve locally.
+Then quantization to GGUF, down to BF16 which is acctually a lack of quantinization, Q8_0, Q6_K, and Q4_K_M, small and fast enough to serve locally. So we drink out water instead of a random GPU in the US.
