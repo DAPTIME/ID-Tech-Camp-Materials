@@ -35,4 +35,4 @@ Then quantization to GGUF, down to BF16 which is acctually a lack of quantinizat
 
 ## Example Video:
 
-<video src="Screen%20Recording%202026-07-15%20105639.mp4" controls width="720"></video>
+[<video src="Screen%20Recording%202026-07-15%20105639.mp4" controls width="720"></video>](https://github.com/DAPTIME/ID-Tech-Camp-Materials/raw/main/readme%20and%20example/Screen%20Recording%202026-07-15%20105639.mp4)
