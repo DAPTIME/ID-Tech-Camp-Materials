@@ -37,5 +37,5 @@ Then the merge, where the adapter gets folded into the base weights. This is the
 Then quantization to GGUF, down to BF16 which is acctually a lack of quantinization, Q8_0, Q6_K, and Q4_K_M, small and fast enough to serve locally. So we drink out water instead of a random GPU in the US.
 
 ## Example Video:
-#### DISCLAIMER!!: If your want to be able to upload images, you will require at least 10gb or vram or 12 gb or unified memory, this is due to mmproj files being very heavy on the GPU.
+### DISCLAIMER!!: If your want to be able to upload images, you will require at least 10gb or vram or 12 gb or unified memory, this is due to mmproj files being very heavy on the GPU.
 https://github.com/user-attachments/assets/7d1a90bf-6c91-4559-9b46-1fdea1fcedbc
