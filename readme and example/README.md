@@ -35,5 +35,6 @@ Then the merge, where the adapter gets folded into the base weights. This is the
 Then quantization to GGUF, down to BF16 which is acctually a lack of quantinization, Q8_0, Q6_K, and Q4_K_M, small and fast enough to serve locally. So we drink out water instead of a random GPU in the US.
 
 ## Example Video:
+Please Higher Your Volume To Hear Me
 
 https://github.com/user-attachments/assets/bc0bbff6-d93c-42eb-88ff-110b7ef68a56
