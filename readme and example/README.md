@@ -10,6 +10,8 @@ Devansh AI is a fine tuned version DAP AI lite, also made by me but smarter. I m
 
 Everything happens on the Orin Nanos. The training, the merge, the quantization, all of it, on 2 dev kit with 8GB of memory and low power consumtion ( No water consumption like a datacenter ). Nothing here ever touched a datacenter GPU, touched a big company, or had to make anyone pay ransom for their data.
 
+Also a small disclamer this model doesn't work in LM Studio as LM Studio breaks some of the models dependencies like bittsandbytes
+
 ## Why I built it
 
 I wanted to know if I start off with command prompt and an empty vs code terminal, and make it mine. Not rent it, not call it over an API, but own the weights and bend them to my will on hardware I can hold in one hand.
