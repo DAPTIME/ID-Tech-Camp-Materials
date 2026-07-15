@@ -23,7 +23,7 @@ Every one of those was a small war, and winning them is why this repo means some
 
 It's four stages, all of them on the Orin.
 
-First, the identity data. A compact set of question and answer pairs that teach the model its name, who built it, and how to politely turn down being ChatGPT or Qwen or InternVL or anything else.
+First, the identity data. A compact set of question and answer pairs that teach the model its name, who built it, and how to  turn down being ChatGPT or Qwen and defo not Copilot (Cause I want people to like my AI, but nobody likes copilot) .
 
 Then LoRA. Instead of retraining a billion parameters, LoRA drops small trainable adapters into the language model's attention layers, so only a fraction of a percent of the model actually changes. Light enough to fit in memory, fast enough to converge in minutes.
 
