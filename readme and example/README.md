@@ -39,4 +39,4 @@ Then quantization to GGUF, down to BF16 which is acctually a lack of quantinizat
 ## Example Video:
 GitHub has broken video volume, Please Higher Your Volume To Hear Me
 
-https://github.com/user-attachments/assets/bc0bbff6-d93c-42eb-88ff-110b7ef68a56
+https://github.com/user-attachments/assets/7d1a90bf-6c91-4559-9b46-1fdea1fcedbc
