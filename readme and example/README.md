@@ -27,7 +27,7 @@ First, the identity data. A compact set of question and answer pairs that teach 
 
 Then LoRA. Instead of retraining a billion parameters, LoRA drops small trainable adapters into the language model's attention layers, so only a fraction of a percent of the model actually changes. Light enough to fit in memory, fast enough to converge in minutes.
 
-Next, I train the AI model to make it smarer because, to be honest, the only way to have a very smart AI on DAP AI is to hae the pro plan and I didn't want to submit a somewhat dumb, free model.
+Next, I train the AI model to make it smarer because, to be honest, the only way to have a very smart AI on DAP AI is to have the pro plan and I didn't want to submit a kinda smart, average, free AI model.
 
 Then the merge, where the adapter gets folded into the base weights. This is the part that matters. It means the identity lives in the model itself rather than being bolted on at runtime by a prompt.
 
